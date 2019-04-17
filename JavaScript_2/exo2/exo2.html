@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercice2</title>
+</head>
+<body>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" onblur="afficherMessage()"/>
+  </form>
+  <script type="text/javascript">
+  // var elem = document.getElementById('lastname').value;
+  // elem.onblur=afficherMessage;
+  function afficherMessage() {
+    var name = document.getElementById('lastname').value;
+    if(name.length > 0){
+     alert("Merci de votre participation");
+    }
+    else {
+      alert("Veuillez renseigner votre nom")
+    }
+  }
+  </script>
+</body>
+</html>
